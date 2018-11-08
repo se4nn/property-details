@@ -1,0 +1,327 @@
+@font-face {
+  font-family: Euclid Circular B;
+  src: url('./fonts/EuclidCircularB-Light-WebS.woff2');
+}
+
+@font-face {
+  font-family: Euclid Circular B;
+  src: url('./fonts/EuclidCircularB-Medium-WebS.woff2');
+}
+
+* {
+  font-family: 'Euclid Circular B', sans-serif;
+  color: #353F52;
+}
+
+body {
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 24px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+.file-picker {
+  max-width: 595px;
+  margin: 100px auto 0;
+  text-align: center;
+}
+
+.file-picker h1 {
+  margin-bottom: 25px;
+}
+
+.file-picker div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.file-picker em p {
+  opacity: 0.5;
+  margin-top: 10px;
+}
+
+.file-picker .inputfile {
+  width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+label {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.label1 {
+  background: #FFCEB6;
+}
+
+.label2 {
+  background: #FFD28C;
+}
+
+.label3 {
+  background: #C1E9DF;
+}
+
+.label4 {
+  background: #D6E9FF;
+}
+
+#image1 {
+  width: 380px !important;
+  height: 305px !important;
+  margin-right: 25px;
+  background: #FFCEB6;
+  background-size: cover !important;
+  background-position: center;
+}
+
+#image2, #image3 {
+  width: 140px !important;
+  height: 140px !important;
+  background-position: center;
+  background-size: cover !important;
+}
+
+#image2 {
+  margin-bottom: 25px;
+  background: #FFD28C;
+}
+
+#image3 {
+  background: #C1E9DF;
+}
+
+#image4 {
+  background-size: cover !important;
+  background-position: center;
+  background: #D6E9FF;
+}
+
+h2, input.address{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+p, input.para, .key-features {
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 16px;
+}
+
+.key-features {
+  letter-spacing: initial;
+}
+
+h6 {
+  font-weight: 300;
+  font-size: 6px;
+  line-height: 10px;
+}
+
+input.address, input.para, .key-features {
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+input.address {
+  width: 380px;
+}
+
+.front, .back {
+  display: flex;
+  flex-direction: column;
+  width: 545px;
+  height: 370px;
+  max-width: 595px;
+  max-height: 420px;
+  padding: 25px;
+  box-shadow: 0 0 10px #353f5220;
+  margin: 50px auto;
+  -webkit-print-color-adjust: exact;
+}
+
+.front {
+  background-image: url("./img/front-background.png");
+  background-size: cover; 
+}
+
+.back {
+  background-image: url("./img/back-background.png");
+  background-size: cover;
+}
+
+.front .images, .address-price, .baths-beds, .row {
+  display: flex;
+}
+
+.front .images {
+  min-height: 305px;
+}
+
+.front .images div {
+  display: flex;
+  flex-direction: column;
+}
+
+.address-price {
+  flex-direction: column;
+}
+
+.details {
+  margin: 25px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.address-price h2 {
+  margin-bottom: 4px;
+}
+
+.address-price div {
+  display: flex;
+  flex-direction: row;
+}
+
+.baths-beds {
+  max-height: 16px;
+}
+
+.baths-beds .row {
+  margin-left: 20px;
+}
+
+.baths-beds .row img {
+  height: 16px;
+  width: 16px;
+  margin-right: 5px;
+}
+
+.baths-beds input{
+  width: 10px;
+  text-align: right;
+}
+
+.back {
+  flex-direction: row;
+}
+
+.left, .right {
+  height: 370px;
+}
+
+.back .left {
+  margin-right: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.back .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#image4 {
+  width: 280px !important;
+  height: 280px !important;
+  margin-bottom: 25px;
+}
+
+.key-features {
+  resize: none;
+  margin-bottom: 25px;
+  line-height: 25px;
+}
+
+.back h2 {
+  margin-bottom: 5px;
+}
+
+.contact-details .row {
+  margin: 5px 0;
+}
+
+.contact-details .row input {
+  margin-left: 10px;
+  width: 220px;
+}
+
+.logo {
+  width: 60px;
+  height: 16px;
+  margin-bottom: 25px;
+}
+
+.print {
+  background: #FFCEB6;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin: 50px auto 100px;
+  outline: none;
+}
+
+@media print {
+
+  body {
+    margin: 0;
+    display: inline;
+  }
+
+  .file-picker, .print {
+    display: none;
+  }
+
+  @page {
+    size: 210mm 148mm;
+    margin: 0mm;
+  }
+
+  .front, .back {
+    margin: 0;
+    box-shadow: none;
+    zoom: calc(300 / 72);
+  }
+
+  .page:last-child {
+    page-break-after: avoid;
+  }
+
+}

@@ -1,0 +1,74 @@
+<!Doctype>
+<html>
+  <head>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./styles.css">
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+    <script src="./script.js"></script>
+    <meta charset=utf-8 />
+    <title>Property Details Flyer</title>
+    <!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="file-picker">
+      <h1>Property details flyer</h1>
+      <p>To change the property images use the buttons below</p>
+      <em><p>PS. Don't forget to add the key features and your contact details!</p></em>
+      <div>
+        <input class="inputfile" type='file' onchange="img1URL(this);" id="img1"/>
+        <input class="inputfile" type='file' onchange="img2URL(this);" id="img2"/>
+        <input class="inputfile" type='file' onchange="img3URL(this);" id="img3"/>
+        <input class="inputfile" type='file' onchange="img4URL(this);" id="img4"/>
+      </div>
+    </div>
+    <div class="front page">
+      <div class="images">
+        <label id="image1" alt="Image 1" for="img1"/>Click to add image</label>
+        <div>
+          <label id="image2" alt="Image 2" for="img2"/>Click to add image</label>
+          <label id="image3" alt="Image 3" for="img3"/>Click to add image</label>
+        </div>
+      </div>
+      <div class="details">
+        <div class="address-price">
+            <input class="address" type="text" placeholder="Rita Road, SW8" onkeyup="updateAddress()">
+            <div><p class="para">£</p><input class="para price" type="text" placeholder="850,000"></div>
+        </div>
+        <div class="baths-beds">
+          <div class="row">
+            <img src="./img/bed.svg" alt="Bedrooms" /> <input class="para beds" type="text" placeholder="3">
+          </div>
+          <div class="row">
+            <img src="./img/bath.svg" alt="Bathrooms" /> <input class="para baths" type="text" placeholder="2">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="back page">
+        <div class="left">
+            <label id="image4" alt="Image 4"  for="img4"/>Click to add image</label>
+          <div class="contact-details">
+            <h2>Contact me</h2>
+            <div class="row">
+              <img src="./img/phone.svg" alt="Phone" /> <input class="para" type="text" placeholder="020 3858 0695">
+            </div>
+            <div class="row">
+                <img src="./img/email.svg" alt="Email" /> <input class="para email" type="text" placeholder="sean@nested.com">
+              </div>
+          </div>
+        </div>
+        <div class="right">
+          <img src="./img/logo.svg" alt="Logo" class="logo" />  
+          <div>
+            <h2>Key Features</h2>
+            <textarea class="key-features" name="key-features" cols="32" rows="10" placeholder="Key Features"></textarea>
+          </div>
+          <h6>We have done everything we can to ensure these details are correct but can’t confirm that as many of the details included change over time. We always recommend that you check any details that you are relying on when purchasing.</h6>
+        </div>
+      </div>
+      <button onclick="myFunction()" class="print">Save this leaflet</button>
+  </body>
+</html> 
