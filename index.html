@@ -22,16 +22,14 @@
         <input class="inputfile" type='file' onchange="img2URL(this);" id="img2"/>
         <input class="inputfile" type='file' onchange="img3URL(this);" id="img3"/>
         <input class="inputfile" type='file' onchange="img4URL(this);" id="img4"/>
+        <input class="inputfile" type='file' onchange="img5URL(this);" id="img5"/>
+        <input class="inputfile" type='file' onchange="img6URL(this);" id="img6"/>
+        <input class="inputfile" type='file' onchange="img7URL(this);" id="img7"/>
+        <input class="inputfile" type='file' onchange="img8URL(this);" id="img8"/>
       </div>
     </div>
-    <div class="front page">
-      <div class="images">
-        <label id="image1" alt="Image 1" for="img1"/>Click to add image</label>
-        <div>
-          <label id="image2" alt="Image 2" for="img2"/>Click to add image</label>
-          <label id="image3" alt="Image 3" for="img3"/>Click to add image</label>
-        </div>
-      </div>
+    <div class="page-1 page">
+      <label id="image1" alt="Image 1" for="img1"/>Click to add image</label>
       <div class="details">
         <div class="address-price">
             <input class="address" type="text" placeholder="Rita Road, SW8" onkeyup="updateAddress()">
@@ -47,28 +45,30 @@
         </div>
       </div>
     </div>
-    <div class="back page">
-        <div class="left">
-            <label id="image4" alt="Image 4"  for="img4"/>Click to add image</label>
-          <div class="contact-details">
-            <h2>Contact me</h2>
-            <div class="row">
-              <img src="./img/phone.svg" alt="Phone" /> <input class="para" type="text" placeholder="020 3858 0695">
-            </div>
-            <div class="row">
-                <img src="./img/email.svg" alt="Email" /> <input class="para email" type="text" placeholder="sean@nested.com">
-              </div>
-          </div>
-        </div>
-        <div class="right">
-          <img src="./img/logo.svg" alt="Logo" class="logo" />  
-          <div>
-            <h2>Key Features</h2>
-            <textarea class="key-features" name="key-features" cols="32" rows="10" placeholder="Key Features"></textarea>
-          </div>
-          <h6>We have done everything we can to ensure these details are correct but can’t confirm that as many of the details included change over time. We always recommend that you check any details that you are relying on when purchasing.</h6>
+    <div class="page-2 page">
+      <div class="left">
+        <label id="image2" alt="Image 2"  for="img2"/>Click to add image</label>
+        <label id="image3" alt="Image 3"  for="img3"/>Click to add image</label>
+      </div>
+      <div class="right">
+        <h2>Full Description</h2>
+        <textarea class="key-features" name="full-description" cols="52" rows="13" placeholder="Full description should be here..."></textarea>
+        <h2>Key Features</h2>
+        <div class="key-feature-block">
+          <textarea class="key-features" name="key-features" cols="25" rows="5" placeholder="Key Features"></textarea>
+          <textarea class="key-features" name="key-features" cols="25" rows="5" placeholder="Key Features"></textarea>
         </div>
       </div>
-      <button onclick="myFunction()" class="print">Save this leaflet</button>
+    </div>
+    <div class="page-3 page">
+      <label id="image4" alt="Image 4"  for="img4"/>Click to add image</label>
+      <label id="image5" alt="Image 5"  for="img5"/>Click to add image</label>
+      <label id="image6" alt="Image 6"  for="img6"/>Click to add image</label>
+      <label id="image7" alt="Image 7"  for="img7"/>Click to add image</label>
+    </div>
+    <div class="page-4 page">
+      <label id="image8" alt="Image 8" for="img8"/>Click to add floorplan</label>
+    </div>
+    <button onclick="myFunction()" class="print">Save this leaflet</button>
   </body>
 </html> 

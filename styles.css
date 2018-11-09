@@ -30,36 +30,6 @@ h1 {
   text-transform: uppercase;
 }
 
-.file-picker {
-  max-width: 595px;
-  margin: 100px auto 0;
-  text-align: center;
-}
-
-.file-picker h1 {
-  margin-bottom: 25px;
-}
-
-.file-picker div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.file-picker em p {
-  opacity: 0.5;
-  margin-top: 10px;
-}
-
-.file-picker .inputfile {
-  width: 0.1px;
-	height: 0.1px;
-	opacity: 0;
-	overflow: hidden;
-	position: absolute;
-	z-index: -1;
-}
-
 label {
   cursor: pointer;
   display: flex;
@@ -89,8 +59,8 @@ label {
 }
 
 #image1 {
-  width: 380px !important;
-  height: 305px !important;
+  width: 792px !important;
+  height: 480px !important;
   margin-right: 25px;
   background: #FFCEB6;
   background-size: cover !important;
@@ -98,8 +68,8 @@ label {
 }
 
 #image2, #image3 {
-  width: 140px !important;
-  height: 140px !important;
+  width: 385px !important;
+  height: 260px !important;
   background-position: center;
   background-size: cover !important;
 }
@@ -113,10 +83,23 @@ label {
   background: #C1E9DF;
 }
 
-#image4 {
+#image4, #image5, #image6, #image7 {
   background-size: cover !important;
   background-position: center;
   background: #D6E9FF;
+  width: 383.5px !important;
+  height: 260px !important;
+  margin-bottom: 25px;
+}
+
+
+#image8 {
+  width: 792px !important;
+  height: 545px !important;
+  margin-right: 25px;
+  background: #FFCEB6;
+  background-size: cover !important;
+  background-position: center;
 }
 
 h2, input.address{
@@ -155,38 +138,40 @@ input.address {
   width: 380px;
 }
 
-.front, .back {
+.page-1, .page-2, .page-3, .page-4 {
   display: flex;
   flex-direction: column;
-  width: 545px;
-  height: 370px;
-  max-width: 595px;
-  max-height: 420px;
+  width: 792px;
+  height: 545px;
+  max-width: 842px;
+  max-height: 595px;
   padding: 25px;
   box-shadow: 0 0 10px #353f5220;
   margin: 50px auto;
   -webkit-print-color-adjust: exact;
 }
 
-.front {
+.page-1, .page-3 {
   background-image: url("./img/front-background.png");
   background-size: cover; 
 }
 
-.back {
+.page-2, .page-4 {
   background-image: url("./img/back-background.png");
   background-size: cover;
 }
 
-.front .images, .address-price, .baths-beds, .row {
+.page-3 {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.page .images, .address-price, .baths-beds, .row {
   display: flex;
 }
 
-.front .images {
-  min-height: 305px;
-}
-
-.front .images div {
+.page .images div {
   display: flex;
   flex-direction: column;
 }
@@ -230,38 +215,32 @@ input.address {
   text-align: right;
 }
 
-.back {
+.page-2 {
   flex-direction: row;
 }
 
-.left, .right {
-  height: 370px;
-}
-
-.back .left {
+.left {
   margin-right: 25px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
-.back .right {
+.right {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-#image4 {
-  width: 280px !important;
-  height: 280px !important;
-  margin-bottom: 25px;
+  padding-top: 25px;
 }
 
 .key-features {
   resize: none;
   margin-bottom: 25px;
   line-height: 25px;
+}
+
+.key-feature-block {
+  display: flex;
+  width: 382px;
+  justify-content: space-between;
 }
 
 .back h2 {
@@ -298,6 +277,36 @@ input.address {
   outline: none;
 }
 
+.file-picker {
+  max-width: 595px;
+  margin: 100px auto 0;
+  text-align: center;
+}
+
+.file-picker h1 {
+  margin-bottom: 25px;
+}
+
+.file-picker div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.file-picker em p {
+  opacity: 0.5;
+  margin-top: 10px;
+}
+
+.file-picker .inputfile {
+  width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
 @media print {
 
   body {
@@ -310,14 +319,15 @@ input.address {
   }
 
   @page {
-    size: 210mm 148mm;
+    size: 297mm 210mm;
     margin: 0mm;
   }
 
-  .front, .back {
+  .page {
     margin: 0;
     box-shadow: none;
-    zoom: calc(300 / 72);
+    zoom: calc(96/72);
+    overflow: hidden;
   }
 
   .page:last-child {
