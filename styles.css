@@ -327,11 +327,11 @@ input.address {
     margin: 0;
     box-shadow: none;
     zoom: calc(96/72);
-    overflow: hidden;
   }
 
-  .page:last-child {
-    page-break-after: avoid;
+  .page-4 {
+    page-break-after: auto;
+    height: 90%;
   }
 
 }
