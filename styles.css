@@ -1,10 +1,12 @@
 @font-face {
   font-family: Euclid Circular B;
+  font-weight: 300;
   src: url('./fonts/EuclidCircularB-Light-WebS.woff2');
 }
 
 @font-face {
   font-family: Euclid Circular B;
+  font-weight: 500;
   src: url('./fonts/EuclidCircularB-Medium-WebS.woff2');
 }
 
@@ -86,11 +88,11 @@ label {
   background: #C1E9DF;
 }
 
-#image4, #image8 {
+#image4 {
   background: #D6E9FF;
 }
 
-#image4, #image5, #image6, #image7 {
+#image4, #image5 {
   background-size: cover !important;
   background-position: center;
   width: 383.5px !important;
@@ -99,7 +101,7 @@ label {
 }
 
 
-#image8 {
+#image6 {
   width: 792px !important;
   height: 545px !important;
   margin-right: 25px;
@@ -115,14 +117,14 @@ h2, input.address{
   text-transform: uppercase;
 }
 
-p, input.para, .key-features {
+p, input.para, .key-features, .description {
   font-weight: 300;
   font-size: 12px;
   letter-spacing: 2px;
   line-height: 16px;
 }
 
-.key-features {
+.key-features, .description {
   letter-spacing: initial;
 }
 
@@ -132,7 +134,7 @@ h6 {
   line-height: 10px;
 }
 
-input.address, input.para, .key-features {
+input.address, input.para, .key-features, .description {
   padding: 0;
   background: none;
   border: none;
@@ -164,12 +166,6 @@ input.address {
 .page-2, .page-4{
   background-image: url("./img/back-background.png");
   background-size: cover;
-}
-
-.page-3 {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .page .images, .address-price, .baths-beds, .row {
@@ -220,7 +216,7 @@ input.address {
   text-align: right;
 }
 
-.page-2 {
+.page-2, .page-3 {
   flex-direction: row;
 }
 
@@ -236,16 +232,10 @@ input.address {
   padding-top: 25px;
 }
 
-.key-features {
+.key-features, .description {
   resize: none;
-  margin-bottom: 25px;
+  margin-top: 10px;
   line-height: 25px;
-}
-
-.key-feature-block {
-  display: flex;
-  width: 382px;
-  justify-content: space-between;
 }
 
 .back h2 {

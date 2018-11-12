@@ -24,8 +24,6 @@
         <input class="inputfile" type='file' onchange="img4URL(this);" id="img4"/>
         <input class="inputfile" type='file' onchange="img5URL(this);" id="img5"/>
         <input class="inputfile" type='file' onchange="img6URL(this);" id="img6"/>
-        <input class="inputfile" type='file' onchange="img7URL(this);" id="img7"/>
-        <input class="inputfile" type='file' onchange="img8URL(this);" id="img8"/>
       </div>
     </div>
     <div class="page-1 page">
@@ -52,22 +50,21 @@
       </div>
       <div class="right">
         <h2>Full Description</h2>
-        <textarea class="key-features" name="full-description" cols="52" rows="13" placeholder="Full description should be here..."></textarea>
-        <h2>Key Features</h2>
-        <div class="key-feature-block">
-          <textarea class="key-features" name="key-features" cols="25" rows="5" placeholder="Key Features"></textarea>
-          <textarea class="key-features" name="key-features" cols="25" rows="5" placeholder="Key Features"></textarea>
-        </div>
+        <textarea class="description" name="full-description" cols="52" rows="20" placeholder="Full description should be here..."></textarea>
       </div>
     </div>
     <div class="page-3 page">
-      <label id="image4" alt="Image 4"  for="img4"/>Click to add image</label>
-      <label id="image5" alt="Image 5"  for="img5"/>Click to add image</label>
-      <label id="image6" alt="Image 6"  for="img6"/>Click to add image</label>
-      <label id="image7" alt="Image 7"  for="img7"/>Click to add image</label>
+      <div class="left">
+        <label id="image4" alt="Image 4"  for="img4"/>Click to add image</label>
+        <label id="image5" alt="Image 5"  for="img5"/>Click to add image</label>
+      </div>
+      <div class="right">
+        <h2>Key Features</h2>
+        <textarea class="key-features" name="key-features" cols="52" rows="20" placeholder="Key Features"></textarea>
+      </div>
     </div>
     <div class="page-4 page">
-      <label id="image8" alt="Image 8" for="img8"/>Click to add image</label>
+      <label id="image6" alt="Image 6" for="img6"/>Click to add image</label>
     </div>
     <button onclick="myFunction()" class="print">Save this leaflet</button>
   </body>

@@ -94,38 +94,6 @@ function img6URL(input) {
     }
 }
 
-function img7URL(input) {
-    if (input.files && input.files[0]) {
-        var reader = new FileReader();
-
-        reader.onload = function (e) {
-            $('#image7')
-                .css({
-                    'background-image' : 'url(" ' + e.target.result + ' ")',
-                    'font-size': '0'
-                });
-        };  
-
-        reader.readAsDataURL(input.files[0]);
-    }
-}
-
-function img8URL(input) {
-    if (input.files && input.files[0]) {
-        var reader = new FileReader();
-
-        reader.onload = function (e) {
-            $('#image8')
-                .css({
-                    'background-image' : 'url(" ' + e.target.result + ' ")',
-                    'font-size': '0'
-                });
-        };
-
-        reader.readAsDataURL(input.files[0]);
-    }
-}
-
 function getUrlVars() {
     var vars = {};
     var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
