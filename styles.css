@@ -68,7 +68,7 @@ label {
   background-position: center;
 }
 
-#image2, #image3 {
+#image2, #image3, #image4, #image5 {
   width: 385px !important;
   height: 260px !important;
   background-position: center;
@@ -80,7 +80,6 @@ label {
 }
 
 #image2, #image6 {
-  margin-bottom: 25px;
   background: #FFD28C;
 }
 
@@ -92,11 +91,7 @@ label {
   background: #D6E9FF;
 }
 
-#image4, #image5 {
-  background-size: cover !important;
-  background-position: center;
-  width: 383.5px !important;
-  height: 260px !important;
+#image2, #image4 {
   margin-bottom: 25px;
 }
 
