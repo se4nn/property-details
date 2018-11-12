@@ -321,7 +321,7 @@ input.address {
   .page {
     margin: 0;
     box-shadow: none;
-    zoom: calc(96/72);
+    zoom: 2;
   }
 
   .page-4 {
