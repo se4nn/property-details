@@ -68,18 +68,18 @@ label {
   background-position: center;
 }
 
-#image2, #image3, #image4, #image5 {
+#image2, #image3, #image4, #image5, #image7, #image8, #image9, #image10 {
   width: 385px !important;
   height: 260px !important;
   background-position: center;
   background-size: cover !important;
 }
 
-#image1, #image5 {
+#image1, #image5, #image9 {
   background: #FFCEB6;
 }
 
-#image2, #image6 {
+#image2, #image6, #image10 {
   background: #FFD28C;
 }
 
@@ -87,11 +87,11 @@ label {
   background: #C1E9DF;
 }
 
-#image4 {
+#image4, #image8 {
   background: #D6E9FF;
 }
 
-#image2, #image4 {
+#image2, #image4, #image7 {
   margin-bottom: 25px;
 }
 
@@ -140,7 +140,7 @@ input.address {
   width: 380px;
 }
 
-.page-1, .page-2, .page-3, .page-4{
+.page-1, .page-2, .page-3, .page-4, .page-5{
   display: flex;
   flex-direction: column;
   width: 792px;
@@ -153,7 +153,7 @@ input.address {
   -webkit-print-color-adjust: exact;
 }
 
-.page-1, .page-3 {
+.page-1, .page-3, .page-5 {
   background-image: url("./img/front-background.png");
   background-size: cover; 
 }
@@ -165,6 +165,12 @@ input.address {
 
 .page .images, .address-price, .baths-beds, .row {
   display: flex;
+}
+
+.page-5 {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .page .images div {
@@ -230,6 +236,9 @@ input.address {
 .key-features, .description {
   resize: none;
   margin-top: 10px;
+}
+
+.key-features {
   line-height: 25px;
 }
 
